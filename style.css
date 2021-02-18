@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 10px;
+}
+.top{
+    background-color: rgb(237, 237, 237);
+    padding: 15px 10px;
+}
+.left ul li{
+    list-style: none;
+    border-bottom: solid 1px lightgray;
+    margin: 10px 0;
+    padding: 5px;
+}
+.left ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.right{
+    background-color: rgb(179, 223, 237);
+    padding: 15px 10px;
+    margin: 10px 0;
+}
+
+.center img{
+    width: 100%;
+    min-height: 400px;
+}
+
+.bottom{
+        background-color: rgb(237, 237, 237);
+        padding: 15px 10px;
+}
+
+@media screen and (min-width: 600px){
+    .left, .center{
+        float: left;
+    }
+    .left{
+        width: 25%;
+    }
+    .center{
+        width: 65%;
+        margin-left: 10%;
+    }
+    .clr{
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .right{
+        float: right;
+    }
+    .left, .right{
+        width: 20%;
+    }
+    .center{
+        width: 47%;
+        margin: 0 5%;
+        margin-bottom: 40px;
+    }
+    .clr{
+        clear: right;
+    }
+    .bottom{
+        margin-top: 30px; /* This line did not work. Instead, given '.center{margin-bottom}'.Please let me now why. THX*/
+        clear: both;
+    }
+}
